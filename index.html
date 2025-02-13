@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header{
+  height:5%;
+  width:100%
+}
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1250px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          /* width: 45%; */
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+      .button-container {
+  position: fixed; /* Fix the button to the screen */
+  top: 10%; /* Set distance from top */
+  right: 10%; /* Set distance from left */
+  z-index: 100; /* Ensure the button stays above other content */
+}
+      .button {
+        
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+      footer {
+        width: 100%;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    footer::after {
+      content: '';
+      position: relative;
+      
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      /* z-index: 1; */
+      border-radius: 15px;
+    }
+
+    footer span {
+      position: relative;
+    }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Optional */
+    }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="header.png" width="30%" height="80%" class="img-responsive"></span>
+      </div>
+
+      <div class="content-container">
+       
+          <div class="lesson-title">Number sense and Numeration</div>
+          <div class="lesson-content">
+            <div>
+              <h2 style="color: blueviolet;">Natural Numbers</h2>
+              <p>
+                Natural numbers are the numbers we use for counting. They start from 1 and go on forever.
+<br><b style="color: red;">Examples:</b> 1, 2, 3, 4, 5, 6, 7, … (and so on).
+<br><img src="./images/16.png" alt="" width="30%">
+              </p><br>
+              <h2 style="color: blueviolet;">Whole Numbers</h2>
+              <p>
+                Whole numbers are just like natural numbers, but they also include zero (0).
+<br><b style="color: red;">Examples:</b> 0, 1, 2, 3, 4, 5, 6, 7, … (and so on).
+<br><img src="./images/17.png" alt="" width="30%"><br>
+<br><img src="./images/18.png" alt="" width="60%">
+<br><br><b style="color: rgb(172, 22, 22);">Fact:</b> All natural numbers are whole numbers, but not all whole numbers are natural numbers.
+              </p>
+              <br>
+              <h2 style="color: blueviolet;">Addition in a Row: Let’s Have Fun Adding Numbers!</h2>
+              <p>
+                Adding numbers can be easy and exciting! Let’s look at how we can add numbers step-by-step, one after another.
+              </p>
+              <h2 style="color: blueviolet;">Addition Without Carrying</h2>
+              <p>
+                When no carrying is needed, addition is straightforward. 
+                <br>Let’s use <b>34 + 12</b> as an example:
+                <br><img src="./images/1.png" alt="" width="40%">
+              </p>
+              <ol>
+                <li>
+                  <b>Separate the Place Values</b>
+                  
+                  <br>34 = 3 tens and 4 ones.
+                  <br><img src="./images/2.png" alt="" width="40%">
+                  <br>12 = 1 ten and 2 ones.
+                  <br><img src="./images/3.png" alt="" width="40%">
+                </li>
+                <li>
+                  <b> Add the Ones</b>
+                  Add the ones directly: <br>
+                  4 + 2 = <b>6</b> ones.
+                  <br><img src="./images/4.png" alt="" width="40%">
+                </li>
+                <li>
+                  <b>Add the Tens</b><br>
+                  Add the tens: <br>
+                 3 + 1 = <b>4 tens (40)</b>.
+                 <br><img src="./images/5.png" alt="" width="40%">
+                </li>
+                <li>
+                  <b>Combine the Results</b>
+        <br>          Put the tens and ones together:
+        <br><img src="./images/6.png" alt="" width="40%">
+        <br>So, <b>34 + 12 = 46.</b>
+
+                </li>
+              </ol>
+              <br>
+              <h2 style="color: blueviolet;">Addition With Carrying:</h2>
+              <p>
+                Now let’s add <b>47 + 26</b>, where we need to carry over a number.
+                <br><img src="./images/7.png" alt="" width="40%">
+              </p>
+              <ol>
+                <li>
+                  <b>Separate the Place Values</b>
+                  <br>47 = 4 tens and 7 ones.
+                  <br><img src="./images/8.png" alt="" width="40%">
+                  <br>26 = 2 tens and 6 ones.
+                  <br><img src="./images/9.png" alt="" width="40%">
+                  
+                </li>
+                <li>
+                 <b> Add the Ones</b>
+
+                 <br>Add the ones: 7 + 6 = <b>13 ones</b>.
+                 <br><img src="./images/10.png" alt="" width="40%">
+
+<br>Since 13 is more than 10, we carry over 1 ten.
+<br><img src="./images/11.png" alt="" width="40%">
+                </li>
+                <li>
+                 <b> Add the Tens (Including the Carry)</b>
+                 <br>Add the tens: 4 + 2 + 1 (the carry) = <b>7 tens.</b>
+                 <br><img src="./images/12.png" alt="" width="40%">
+                </li>
+                <li>
+                  <b>Combine the Results</b>
+                  <br>So, <b>47 + 26 = 73</b>.
+                  <br><img src="./images/13.png" alt="" width="40%">
+
+                </li>
+              </ol>
+
+              <h2 style="color: blueviolet;">Addition by Breaking in Parts</h2>
+              <p>
+                Breaking numbers into parts makes addition easier by focusing on place values . This method helps in solving large additions step by step.
+              </p>
+              <h3 style="color: #4CAF50;"><u>Steps to Add by Breaking in Parts:</u></h3>
+              <ol>
+                <li>Break each number based on place values.</li>
+                <li>Add each place value separately.</li>
+                <li>Combine the sums to get the final answer.</li>
+              </ol>
+              <h3 style="color: red">Example:</h3>
+              <p>
+                <b>Break each number based on place values:</b>
+                <br>213 = <b>200 + 10 + 3</b>
+                <br>214 = <b>200 + 10 + 4</b>
+                <br><img src="./images/14.png" alt="" width="40%">
+                
+                <br><b>Add the hundreds, tens and ones separately.</b>
+                <br><img src="./images/15.png" alt="" width="40%">
+
+                <br><b>Combine all sums:</b>
+                <br>400 + 20 + 7 = <b>427</b>
+<br>So, <b>213 + 214 = 427</b>.
+              </p>
+              <br>
+              <h2 style="color: blueviolet;">Column Addition Method</h2>
+              <p>
+                The column addition method is a systematic way of adding large numbers by aligning them according to place values (ones, tens, hundreds, etc.) and adding them vertically. Let’s add 251 and 357 as an example.
+              </p>
+              <p style="text-align: center;">
+                <b>Step 1: Create columns for each place value</b>
+<br><img src="./images/19.png" alt="" width="30%"><br>
+<b>Step 2: Write the numbers to be added in a vertical format. Align digits in the same place value (ones under ones, tens under tens, etc.)</b>
+<br><img src="./images/20.png" alt="" width="30%"><br>
+<b>Step 3: Add the numbers in the Ones column.</b>
+<br><img src="./images/21.png" alt="" width="30%"><br>
+<b>Step 4: Add the numbers in the Tens column.</b>
+<br><img src="./images/22.png" alt="" width="30%"><br>
+
+
+(since the sum is greater than 9 carry the tens digit to the next left column)
+<br><b>Step 5: Add the numbers in the Hundreds column (including the carry).</b>
+<br><img src="./images/23.png" alt="" width="30%"><br>
+
+              </p>
+              <p style="text-align: center;">
+                <b>Thus, 251 + 357 = 608.</b>
+              </p>
+              <br>
+              <h2 style="color: blueviolet;">Addition of Numbers Ending with Zero</h2>
+              <p>
+                Numbers ending with zero are 10, 20, 30, 100, 200, etc. Adding such numbers is very simple.
+<br><br><b style="color: red;">Example 1:</b>  200 + 500
+<br><br><b>Step 1:</b> Ignore the zeros and add <b>2 + 5 = 7</b>.
+<br><b>Step 2:</b> Attach two zeros back → <b>700</b>.
+<br><br>Thus, 200 + 500 = 700
+<br><br><b style="color: red;">Example 2:</b> 400 + 80 + 20
+<br><br><b>Step 1:</b> Add 80 and 20 first → <b>80 + 20 = 100</b>.
+<br><b>Step 2:</b> Add 400 + 100 → <b>500</b>.
+<br><br>Thus,  400 + 80 + 20 = 500
+
+              </p>
+              <h2 style="color: blueviolet;">Adding a Number That Ends with Zeros to Another Number</h2>
+              <p>
+                <b style="color: red;">Example 1:</b> 45 + 20 (Adding 20 to 45)
+                <br><br><b>Step 1:</b> Break it down into place values:
+                <br><b>Step 2: </b>Add  the tens: 4 + 2 = 6
+                <br><b>Step 3:</b> Add the Ones: 5 + 0 = 5
+                <br><br>Thus, 45 + 20 = 65
+                <br><br><b style="color: red;">Example 2:</b> 2,345 + 3,000 (Adding 3,000 to 2,345)
+                <br><br><b>Step 1:</b> Add thousands first: 2 + 3 = 5
+                <br><b>Step 2:</b> Keep the other digits same where zeros exist.<br><br> Thus, 2,345 + 3000 = 5,345
+              </p><br>
+              <h2 style="color: blueviolet;">Properties of Addition</h2>
+              <p>
+                Addition follows several fundamental properties that help simplify calculations.
+                <br><br><b style="color: #4CAF50;">1. Commutative Property</b>
+                <br>The order in which two numbers are added does not change the sum. That is, a+b=b+a
+                <br><br><b style="color: red;">Example:</b>
+                <br>5 + 3 = 3 + 5
+                <br>8 = 8
+                <br><br><b style="color: #4CAF50;">2. Associative Property</b>
+                <br>The way numbers are grouped in addition does not change the sum. That is, (a+b)+c=a+(b+c)
+                <br><br><b style="color: red;">Example:</b>
+                <br>(2 + 3) + 4 = 2 + (3 + 4)
+                <br>5 + 4 = 2 + 7
+                <br>9 = 9
+                <br><br><b style="color: #4CAF50;">3. Identity Property</b>
+                <br>The sum of any number and zero is the number itself. That is, a+0=0+a=a. 
+                <br><br>
+<b style="color: red;">Example:</b>
+<br>9 + 0 = 0 + 9 = 9
+
+              </p>
+            </div>
+            
+          </div>
+            
+          
+          
+        
+        
+        
+      </div>
+      
+   
+    <footer>
+      <span>Created By Team Way To Succeed</span>
+    </footer>
+  </body>
+</html>
